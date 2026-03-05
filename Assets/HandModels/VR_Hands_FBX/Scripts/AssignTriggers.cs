@@ -1,28 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.InputSystem;
 
 public class AssignTriggers : MonoBehaviour
 {
-    public XRBaseController controller;
+    public InputActionProperty grabAction;
     public HandAnimation handAnimation;
 
-    private void Start()
+    private bool wasPressed = false;
+
+    void Start()
     {
-        handAnimation = GetComponentInChildren<HandAnimation>();
+        if (handAnimation == null)
+            handAnimation = GetComponentInChildren<HandAnimation>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(handAnimation == null)
-            handAnimation = GetComponentInChildren<HandAnimation>();
         if (handAnimation == null)
             return;
-        if (controller.selectInteractionState.activatedThisFrame)
+
+        float value = grabAction.action.ReadValue<float>();
+        bool isPressed = value > 0.1f;
+
+        if (isPressed && !wasPressed)
+        {
             handAnimation.TriggerGrab();
-        else if (controller.selectInteractionState.deactivatedThisFrame)
+        }
+        else if (!isPressed && wasPressed)
+        {
             handAnimation.TriggerLet();
+        }
+
+        wasPressed = isPressed;
     }
 }

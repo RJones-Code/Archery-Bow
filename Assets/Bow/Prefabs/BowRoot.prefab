@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6212438254343791629}
   - component: {fileID: 6299028149673192210}
   - component: {fileID: 1562931290379087565}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: BowRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,10 +216,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.025509357
+  m_Radius: 0.032924056
   m_Height: 0.42881286
   m_Direction: 1
-  m_Center: {x: -0.0027513504, y: 0.07115847, z: -0.00029277802}
+  m_Center: {x: -0.0014191866, y: 0.07115847, z: -0.000718832}
 --- !u!114 &6299028149673192210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   midPointVisual: {fileID: 8572000637157673537}
-  arrowPrefab: {fileID: 3551146735871439609, guid: b6317964bbbb73e45af43a11f502e41a, type: 3}
+  arrowPrefab: {fileID: 656620213512949161, guid: dfac5300e84f60f4db1f2becf0eb8e66, type: 3}
   arrowSpawnPoint: {fileID: 590054088491338542}
   arrowMaxSpeed: 10
 --- !u!1 &590054088491338542
@@ -292,7 +292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1148432435505949474}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8122933741274423710}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: BowEndPoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4749185066253628445}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: AttachPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,7 +387,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1474702785107411813}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: End_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,7 +403,7 @@ Transform:
   m_GameObject: {fileID: 3476766318337530595}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.543, y: 0.5948, z: -0.753}
+  m_LocalPosition: {x: -2.543, y: 0.5947, z: -0.7551}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 3715501649521875547}
   - component: {fileID: 5725632094944504691}
   - component: {fileID: 5653655022051846430}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,7 +504,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1625242828784532578}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: MidPointParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 2686359860677907814}
   - component: {fileID: 5062955164100479889}
   - component: {fileID: 4529581666218169374}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: BowStringVisualization
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -692,7 +692,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 649884106422744073}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: End_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -708,7 +708,7 @@ Transform:
   m_GameObject: {fileID: 8327689696410083774}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5426, y: 2.1016, z: -0.7552}
+  m_LocalPosition: {x: -2.5426, y: 2.1024, z: -0.7548}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -723,7 +723,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3915087371055770932}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: MidPointVisualObj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -759,7 +759,7 @@ GameObject:
   - component: {fileID: 5653042626669373190}
   - component: {fileID: 214742618285276680}
   - component: {fileID: 6522762939634594516}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: MidPointGrabObj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1029,7 +1029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 52fd031aab3726b47b3cd36e0209fd31, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1055,7 +1055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3071200836386737285, guid: a70ceb755130c3945ab0a183ac7ad379, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3071200836386737285, guid: a70ceb755130c3945ab0a183ac7ad379, type: 3}
       propertyPath: m_IsActive
@@ -1119,15 +1119,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7998820815467459965, guid: a70ceb755130c3945ab0a183ac7ad379, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8517746335508018574, guid: a70ceb755130c3945ab0a183ac7ad379, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9160801868610102634, guid: a70ceb755130c3945ab0a183ac7ad379, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
